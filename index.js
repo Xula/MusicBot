@@ -53,5 +53,5 @@ bot.on('message', (message) => {
 
 
 //deixa o bot online
-bot.login('NTIzOTY5OTIxOTQwNzE3NTg1.DvhQ3A.HGBFHGJztTjFWKpYNDV5n4lN_Og');
+bot.login('PRIVATE_TOKEN');
 
