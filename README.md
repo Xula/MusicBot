@@ -1,2 +1,3 @@
-# MENOWBot
-Learning to create a DiscordBot
+#MENOWBot
+
+This is the simplest BOT you will ever see.
