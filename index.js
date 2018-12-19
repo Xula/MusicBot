@@ -4,7 +4,8 @@ const YouTube = require('youtube-node');
 var youTube = new YouTube();
 
 //ESSA POHA AQUI TBM EH PRIVADO CARAIO
-youTube.setKey('YOUTUBE-TOKEN');
+youTube.setKey('googleToken');
+
 
 
 
@@ -74,6 +75,7 @@ bot.on('message', (message) => {
                 canalAtual.join().then(connection => {
                     const stream = ytdl('https://www.youtube.com/watch?v=' + busca, {filter:'audioonly'});
                     const dispatcher = connection.playStream(stream, streamOptions);
+                    message.reply('Estou tocando a musica ` ' + result.items[0].snippet.title + "`");
                 }).catch(console.error);
             }
         });
@@ -83,5 +85,5 @@ bot.on('message', (message) => {
 
 // ESSE ID É PRIVADO, LEMBRAR DE TROCAR ELE (THIS ID IS PRIVATE,
 // REMEMBER TO CHANGE IT BEFORE UPLOAD THIS CODE).
-bot.login('DISCORD_TOKEN');
+bot.login('discordToken');
 
