@@ -81,9 +81,6 @@ bot.on('message', (message) => {
     }
 });
 
-
-
-//Turn on Bot
 // ESSE ID É PRIVADO, LEMBRAR DE TROCAR ELE (THIS ID IS PRIVATE,
 // REMEMBER TO CHANGE IT BEFORE UPLOAD THIS CODE).
 bot.login('DISCORD_TOKEN');
