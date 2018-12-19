@@ -1,4 +1,12 @@
 const Discord = require('discord.js'); // É uma classe
+const YouTube = require('youtube-node');
+
+var youTube = new YouTube();
+
+//ESSA POHA AQUI TBM EH PRIVADO CARAIO
+youTube.setKey('YOUTUBE-TOKEN');
+
+
 
 const bot = new Discord.Client();
 
@@ -48,10 +56,35 @@ bot.on('message', (message) => {
         }).catch(console.error);
 
     }
+
+    if(message.content.startsWith('!busca')){
+        var args = message.content.slice(1).trim().split(/ +/g);
+        //contem a palavra da busca
+        args.shift();
+        
+        console.log('palavra buscada: ' + args.toString().replace(/,/g, "+"));
+        youTube.search(args.toString(), 1, (error, result) => {
+            if(error){
+                console.log(error);
+            }
+            else{
+                console.log(result.items[0].id.videoId);
+                let busca = result.items[0].id.videoId;
+                canalAtual = message.member.voiceChannel;
+                canalAtual.join().then(connection => {
+                    const stream = ytdl('https://www.youtube.com/watch?v=' + busca, {filter:'audioonly'});
+                    const dispatcher = connection.playStream(stream, streamOptions);
+                }).catch(console.error);
+            }
+        });
+
+    }
 });
 
 
 
-//deixa o bot online
-bot.login('NTIzOTY5OTIxOTQwNzE3NTg1.DvhQ3A.HGBFHGJztTjFWKpYNDV5n4lN_Og');
+//Turn on Bot
+// ESSE ID É PRIVADO, LEMBRAR DE TROCAR ELE (THIS ID IS PRIVATE,
+// REMEMBER TO CHANGE IT BEFORE UPLOAD THIS CODE).
+bot.login('DISCORD_TOKEN');
 
