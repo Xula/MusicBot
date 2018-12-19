@@ -4,7 +4,7 @@ const YouTube = require('youtube-node');
 var youTube = new YouTube();
 
 //ESSA POHA AQUI TBM EH PRIVADO CARAIO
-youTube.setKey('googleToken');
+youTube.setKey(process.env.googleToken);
 
 
 
@@ -85,5 +85,5 @@ bot.on('message', (message) => {
 
 // ESSE ID É PRIVADO, LEMBRAR DE TROCAR ELE (THIS ID IS PRIVATE,
 // REMEMBER TO CHANGE IT BEFORE UPLOAD THIS CODE).
-bot.login('discordToken');
+bot.login(process.env.discordToken);
 
