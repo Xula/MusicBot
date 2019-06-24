@@ -1,9 +1,9 @@
-const Discord = require('discord.js'); // É uma classe
+const Discord = require('discord.js');
 const YouTube = require('youtube-node');
 
 var youTube = new YouTube();
 
-//ESSA POHA AQUI TBM EH PRIVADO CARAIO
+// YOUTUBE API PRIVATED KEY
 youTube.setKey(process.env.googleToken);
 
 
@@ -83,7 +83,6 @@ bot.on('message', (message) => {
     }
 });
 
-// ESSE ID É PRIVADO, LEMBRAR DE TROCAR ELE (THIS ID IS PRIVATE,
-// REMEMBER TO CHANGE IT BEFORE UPLOAD THIS CODE).
+// DISCORD API PRIVATED KEY
 bot.login(process.env.discordToken);
 
