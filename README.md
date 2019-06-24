@@ -1,4 +1,4 @@
-# MENOWBot
+Discord MusicBot
 
 Simple music BOT for Discord, built with NodeJS.
 
