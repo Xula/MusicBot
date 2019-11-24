@@ -61,7 +61,102 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-
+    if (message.content == "!angelic") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Angelic.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!binetsu") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Binetsu.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!heart") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Heart.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!happy") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Happy.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!heart") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Heart.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!hello") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Hello.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!kira") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Kira.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!moment") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Moment.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!paradise") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Paradise.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!sunny") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Sunny.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!super") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Super.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!wing") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Wing.mp3");
+      })
+      .catch(console.error);
+  }
   if (message.content.startsWith("!tocar")) {
     let args = message.content
       .slice(1)
