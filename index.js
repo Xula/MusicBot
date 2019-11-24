@@ -53,11 +53,11 @@ bot.on("message", message => {
       .catch(console.error);
   }
 
-  if (message.content == "!omaewa") {
+  if (message.content == "!mansa") {
     message.member.voiceChannel
       .join()
       .then(connection => {
-        const dispatcher = connection.playFile("omaewa.mp3");
+        const dispatcher = connection.playFile("mansa.mp3");
       })
       .catch(console.error);
   }
