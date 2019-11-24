@@ -189,6 +189,46 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
+    if (message.content == "!nakade") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Nakade.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!kururin") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Kururin.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!snow") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Snow.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!wondeful") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Wonderful.mp3");
+      })
+      .catch(console.error);
+  }
+    if (message.content == "!love") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Love.mp3");
+      })
+      .catch(console.error);
+  }
   if (message.content.startsWith("!tocar")) {
     let args = message.content
       .slice(1)
