@@ -237,7 +237,7 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-  if (message.content == "!aishiteru) {
+  if (message.content == "!aishiteru") {
     message.member.voiceChannel
       .join()
       .then(connection => {
@@ -245,7 +245,7 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-  if (message.content == "!startd) {
+  if (message.content == "!startd") {
     message.member.voiceChannel
       .join()
       .then(connection => {
@@ -253,7 +253,7 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-  if (message.content == "!kaguya) {
+  if (message.content == "!kaguya") {
     message.member.voiceChannel
       .join()
       .then(connection => {
@@ -261,7 +261,7 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-  if (message.content == "!mogyu) {
+  if (message.content == "!mogyu") {
     message.member.voiceChannel
       .join()
       .then(connection => {
