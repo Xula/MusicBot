@@ -213,7 +213,7 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-    if (message.content == "!wondeful") {
+    if (message.content == "!wonderful") {
     message.member.voiceChannel
       .join()
       .then(connection => {
@@ -226,6 +226,46 @@ bot.on("message", message => {
       .join()
       .then(connection => {
         const dispatcher = connection.playFile("Love.mp3");
+      })
+      .catch(console.error);
+  }
+  if (message.content == "!kora) {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Kora.mp3");
+      })
+      .catch(console.error);
+  }
+  if (message.content == "!aishiteru) {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Aishiteru.mp3");
+      })
+      .catch(console.error);
+  }
+  if (message.content == "!startd) {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Start.mp3");
+      })
+      .catch(console.error);
+  }
+  if (message.content == "!kaguya) {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Kaguya.mp3");
+      })
+      .catch(console.error);
+  }
+  if (message.content == "!mogyu) {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Mogyu.mp3");
       })
       .catch(console.error);
   }
