@@ -269,6 +269,14 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
+if (message.content == "!vol2") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("vol2.mp3");
+      })
+      .catch(console.error);
+  }
   if (message.content.startsWith("!tocar")) {
     let args = message.content
       .slice(1)
