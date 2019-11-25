@@ -229,7 +229,7 @@ bot.on("message", message => {
       })
       .catch(console.error);
   }
-  if (message.content == "!kora) {
+  if (message.content == "!kora") {
     message.member.voiceChannel
       .join()
       .then(connection => {
