@@ -277,6 +277,14 @@ if (message.content == "!vol2") {
       })
       .catch(console.error);
   }
+if (message.content == "!bokutachi") {
+    message.member.voiceChannel
+      .join()
+      .then(connection => {
+        const dispatcher = connection.playFile("Bokutachi.mp3");
+      })
+      .catch(console.error);
+  }
   if (message.content.startsWith("!tocar")) {
     let args = message.content
       .slice(1)
